@@ -1,0 +1,103 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+.container {
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 0 10px;
+}
+
+:root {
+	--main-color: #8428f8;
+	--dark-color: #141c3a;
+	--gray-color: #dcdcde;
+	--text-color: #535e88;
+	--light-family: "Gilroy light";
+	--bold-family: "Gilroy ExtraBold";
+}
+
+body {
+	font-family: var(--light-family);
+	font-size: 17px;
+	line-height: 30px;
+	color: var(--dark-color);
+}
+a {
+	color: var(--dark-color);
+	text-decoration: none;
+}
+h1 {
+	font-family: var(--bold-family);
+	font-size: 22px;
+	line-height: 32px;
+}
+h2 {
+	font-family: var(--bold-family);
+	line-height: 59px;
+	font-size: 48px;
+	color: var(--dark-color);
+}
+#line {
+	width: 1px;
+	height: 27px;
+	background: var(--gray-color);
+}
+
+.main {
+	color: var(--text-color);
+}
+/* Header */
+.header {
+	border-bottom: 1px solid var(--gray-color);
+}
+.header-container {
+	padding: 45px 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-list {
+	display: flex;
+	column-gap: 50px;
+}
+.nav-item:hover {
+	color: var(--main-color);
+	transition: all 0.4s;
+}
+
+/* About */
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 113px 109px 132px 109px;
+}
+.about-text {
+	text-align: center;
+	margin: 0 0 47px 0;
+}
+.about-picture {
+	width: 255px;
+	height: 255px;
+	border-radius: 50%;
+	background: url(/rsschool-cv/img/Avatar.jpg) no-repeat;
+	background-size: 255px 255px;
+}
+.about-contact {
+	margin: 26px 0 0 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 20px;
+}
+.contact-title {
+	color: var(--dark-color);
+	font-size: 20px;
+}
+.about-phone {
+	text-align: right;
+}
+.about-email {
+	text-align: left;
+}
