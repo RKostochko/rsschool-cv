@@ -35,11 +35,22 @@ h1 {
 	line-height: 32px;
 }
 h2,
+h3,
 h4 {
 	font-family: var(--bold-family);
 	line-height: 59px;
 	font-size: 48px;
 	color: var(--dark-color);
+}
+h3 {
+	margin: 0 auto;
+	padding: 47px 0 43px 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 26px;
+	line-height: 32px;
+	max-width: 1532px;
+	border-bottom: 1px solid var(--gray-color);
 }
 h4 {
 	line-height: 32px;
@@ -55,6 +66,11 @@ h4 {
 .main {
 	color: var(--text-color);
 }
+.info-title {
+	color: var(--dark-color);
+	font-size: 20px;
+}
+
 /* Header */
 .header {
 	border-bottom: 1px solid var(--gray-color);
@@ -100,10 +116,6 @@ h4 {
 	align-items: center;
 	column-gap: 20px;
 }
-.contact-title {
-	color: var(--dark-color);
-	font-size: 20px;
-}
 .about-phone {
 	text-align: right;
 }
@@ -121,4 +133,34 @@ h4 {
 }
 .name {
 	color: var(--main-color);
+}
+
+/* Experience */
+.experience-container {
+	display: flex;
+	justify-content: center;
+}
+.work {
+	display: flex;
+	justify-content: center;
+	margin: 120px 0 90px 243px;
+}
+.work-summary {
+	max-width: 245px;
+}
+.work-eclipse {
+	width: 9px;
+	height: 9px;
+	background: var(--main-color);
+	border-radius: 50%;
+	margin: 10px 83px;
+}
+.work-info {
+	max-width: 430px;
+}
+.work p {
+	margin-bottom: 13px;
+}
+.work-summary {
+	text-align: right;
 }
