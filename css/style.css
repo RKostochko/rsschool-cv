@@ -16,6 +16,9 @@
 	--bold-family: "Gilroy ExtraBold";
 }
 
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: var(--light-family);
 	font-size: 17px;
@@ -31,11 +34,17 @@ h1 {
 	font-size: 22px;
 	line-height: 32px;
 }
-h2 {
+h2,
+h4 {
 	font-family: var(--bold-family);
 	line-height: 59px;
 	font-size: 48px;
 	color: var(--dark-color);
+}
+h4 {
+	line-height: 32px;
+	font-size: 26px;
+	margin: 0 0 28px 0;
 }
 #line {
 	width: 1px;
@@ -66,12 +75,12 @@ h2 {
 }
 
 /* About */
-.about {
+.about-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin: 113px 109px 132px 109px;
+	padding: 113px 109px 132px 109px;
 }
 .about-text {
 	text-align: center;
@@ -100,4 +109,16 @@ h2 {
 }
 .about-email {
 	text-align: left;
+}
+
+/* Intro */
+.intro {
+	background: var(--gray-color);
+}
+.intro-container {
+	text-align: center;
+	padding: 153px 275px 144px 275px;
+}
+.name {
+	color: var(--main-color);
 }
