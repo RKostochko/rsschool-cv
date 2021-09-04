@@ -57,6 +57,9 @@ h4 {
 	font-size: 26px;
 	margin: 0 0 28px 0;
 }
+h5 {
+	color: var(--dark-color);
+}
 #line {
 	width: 1px;
 	height: 27px;
@@ -163,4 +166,43 @@ h4 {
 }
 .work-summary {
 	text-align: right;
+}
+
+/* Skills */
+.skills h3 {
+	border-top: 1px solid var(--gray-color);
+}
+.skills-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	column-gap: 115px;
+	padding: 130px 0 120px 0;
+}
+.skill {
+	padding: 10px 0 12px 0;
+}
+.progress {
+	height: 6px;
+	width: 467px;
+	outline: none;
+	border-radius: 100px;
+}
+.javascript-progress {
+	background: linear-gradient(to right, var(--main-color) 0%, var(--main-color) 40%, #dfe5eb 40%, #dfe5eb 100%);
+}
+.html-progress {
+	background: linear-gradient(to right, var(--main-color) 0%, var(--main-color) 80%, #dfe5eb 40%, #dfe5eb 100%);
+}
+.figma-progress {
+	background: linear-gradient(to right, var(--main-color) 0%, var(--main-color) 70%, #dfe5eb 40%, #dfe5eb 100%);
+}
+.frontend-progress {
+	background: linear-gradient(to right, var(--main-color) 0%, var(--main-color) 45%, #dfe5eb 40%, #dfe5eb 100%);
+}
+.css-progress {
+	background: linear-gradient(to right, var(--main-color) 0%, var(--main-color) 75%, #dfe5eb 40%, #dfe5eb 100%);
+}
+.photoshop-progress {
+	background: linear-gradient(to right, var(--main-color) 0%, var(--main-color) 85%, #dfe5eb 40%, #dfe5eb 100%);
 }
