@@ -12,6 +12,7 @@
 	--dark-color: #141c3a;
 	--gray-color: #dcdcde;
 	--text-color: #535e88;
+	--bg-color: #f9fbfd;
 	--light-family: "Gilroy light";
 	--bold-family: "Gilroy ExtraBold";
 }
@@ -109,7 +110,7 @@ h5 {
 	width: 255px;
 	height: 255px;
 	border-radius: 50%;
-	background: url(/rsschool-cv/img/Avatar.jpg) no-repeat;
+	background: url(/img/Avatar.jpg) no-repeat;
 	background-size: 255px 255px;
 }
 .about-contact {
@@ -128,7 +129,7 @@ h5 {
 
 /* Intro */
 .intro {
-	background: var(--gray-color);
+	background: var(--bg-color);
 }
 .intro-container {
 	text-align: center;
@@ -205,4 +206,45 @@ h5 {
 }
 .photoshop-progress {
 	background: linear-gradient(to right, var(--main-color) 0%, var(--main-color) 85%, #dfe5eb 40%, #dfe5eb 100%);
+}
+
+/* Education */
+.education {
+	background: var(--bg-color);
+}
+.education-container {
+	display: flex;
+	justify-content: center;
+	column-gap: 70px;
+	padding: 120px 0;
+}
+.education-block {
+	display: flex;
+	flex-direction: column;
+}
+.education-block .info-title {
+	margin: 0 0 13px 0;
+}
+.education-decoration {
+	display: flex;
+	align-items: center;
+}
+.education-eclipse {
+	width: 9px;
+	height: 9px;
+	background: var(--main-color);
+	border-radius: 50%;
+	margin: 31px 31px 32px 0;
+}
+.decoration-line {
+	width: 414px;
+	height: 1px;
+	background: var(--gray-color);
+}
+.education-text {
+	width: 400px;
+}
+.education-place {
+	text-transform: uppercase;
+	margin: 0 0 13px 0;
 }
