@@ -275,3 +275,16 @@ h5 {
 	transform: scale(1.1);
 	transition: all 0.4s;
 }
+
+/* Footer */
+.footer {
+	background: var(--bg-color);
+	padding: 190px 0 230px 0;
+}
+.footer h3 {
+	color: var(--main-color);
+	border: none;
+}
+.footer h3:hover {
+	text-decoration: underline;
+}
