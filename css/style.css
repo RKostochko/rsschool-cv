@@ -1,5 +1,6 @@
 @import url(fonts.css);
 @import url(reset.css);
+@import url(header.css);
 
 .container {
 	margin: 0 auto;
@@ -73,25 +74,6 @@ h5 {
 .info-title {
 	color: var(--dark-color);
 	font-size: 20px;
-}
-
-/* Header */
-.header {
-	border-bottom: 1px solid var(--gray-color);
-}
-.header-container {
-	padding: 45px 50px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.nav-list {
-	display: flex;
-	column-gap: 50px;
-}
-.nav-item:hover {
-	color: var(--main-color);
-	transition: all 0.4s;
 }
 
 /* About */
