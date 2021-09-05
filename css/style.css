@@ -6,6 +6,9 @@
 	max-width: 1170px;
 	padding: 0 10px;
 }
+html {
+	scroll-behavior: smooth;
+}
 
 :root {
 	--main-color: #8428f8;
@@ -17,9 +20,6 @@
 	--bold-family: "Gilroy ExtraBold";
 }
 
-html {
-	scroll-behavior: smooth;
-}
 body {
 	font-family: var(--light-family);
 	font-size: 17px;
@@ -110,7 +110,7 @@ h5 {
 	width: 255px;
 	height: 255px;
 	border-radius: 50%;
-	background: url(/img/Avatar.jpg) no-repeat;
+	background: url(../img/Avatar.jpg) no-repeat;
 	background-size: 255px 255px;
 }
 .about-contact {
