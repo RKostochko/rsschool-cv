@@ -12,6 +12,7 @@
 	--bg-color: #c4c4c4;
 	--active-color: #e86526;
 	--gray-color: #919191;
+	--white-color: #ffffff;
 }
 
 html {
@@ -19,7 +20,7 @@ html {
 }
 body {
 	background: url(../img/bg-image.png) no-repeat;
-	background-position: right;
+	background-position: right -20px;
 	background-color: var(--bg-color);
 }
 h1 {
@@ -35,6 +36,14 @@ h3 {
 	font-size: 25px;
 	line-height: 29px;
 	color: var(--gray-color);
+}
+h4 {
+	font-size: 30px;
+	line-height: 37px;
+	letter-spacing: 0.18em;
+	color: var(--white-color);
+	font-family: "Montserrat";
+	font-weight: bold;
 }
 
 /* Hero */
@@ -67,4 +76,46 @@ h3 {
 .hero-links-item:hover {
 	transform: scale(1.1);
 	transition: all 0.4s;
+}
+
+/* Summary */
+.summary {
+	margin: 240px 0 0 0;
+	background: linear-gradient(90.18deg, #1d1d1d 31.74%, #1d1d1d 90.49%, #1d1d1d 90.49%);
+	padding: 54px 670px 50px 102px;
+}
+.summary-container {
+	margin: 0 auto;
+	max-width: 1700px;
+	padding: 0 8px;
+	display: flex;
+	flex-direction: column;
+}
+.summary-container p {
+	margin: 26px 0;
+	font-family: "Open Sans";
+	font-size: 15px;
+	line-height: 138%;
+	color: var(--white-color);
+}
+.fast-connect-btn {
+	height: 32px;
+	max-width: 140px;
+	border-left: 2px solid #ffffff;
+	border-right: 2px solid #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fast-connect {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 18px;
+}
+.fast-connect-btn:hover {
+	box-shadow: 1px 1px var(--active-color), 2px 2px var(--active-color), 3px 3px var(--active-color),
+		4px 4px var(--active-color), 5px 5px var(--active-color), 6px 6px var(--active-color), 7px 7px var(--active-color);
+	-webkit-transform: translateX(-7px);
+	transform: translateX(-7px);
 }
