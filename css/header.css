@@ -1,18 +1,62 @@
-/* Header */
-.header {
-	border-bottom: 1px solid var(--gray-color);
-}
 .header-container {
-	padding: 45px 50px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 21px;
 }
-.nav-list {
+.logo-img {
+	height: 50px;
+	width: auto;
+}
+.nav-menu {
 	display: flex;
-	column-gap: 50px;
+	column-gap: 8px;
+}
+.nav-menu li {
+	margin: 50px 0px 50px 0px;
+	width: 147px;
+	height: 46px;
+	text-align: center;
 }
 .nav-item:hover {
-	color: var(--main-color);
+	color: #e86526;
 	transition: all 0.4s;
+}
+.nav-item::before,
+.nav-item::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.nav-item::before {
+	margin-right: 10px;
+	content: "[";
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.nav-item::after {
+	margin-left: 10px;
+	content: "]";
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.nav-item:hover::before,
+.nav-item:hover::after,
+.nav-item:focus::before,
+.nav-item:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
 }
