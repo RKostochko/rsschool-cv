@@ -4,11 +4,14 @@
 
 .container {
 	margin: 0 auto;
-	max-width: 1170px;
+	max-width: 1340px;
 	padding: 0 10px;
 }
 
 :root {
+	--bg-color: #c4c4c4;
+	--active-color: #e86526;
+	--gray-color: #919191;
 }
 
 html {
@@ -17,4 +20,51 @@ html {
 body {
 	background: url(../img/bg-image.png) no-repeat;
 	background-position: right;
+	background-color: var(--bg-color);
+}
+h1 {
+	font-size: 63px;
+	line-height: 74px;
+}
+h2 {
+	font-size: 40px;
+	line-height: 47px;
+}
+h3 {
+	font-weight: 800;
+	font-size: 25px;
+	line-height: 29px;
+	color: var(--gray-color);
+}
+
+/* Hero */
+.hero {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: bold;
+}
+.hero-container {
+	padding: 190px 0 0 0;
+}
+.hero-high-text {
+	margin: 0 0 66px 0;
+}
+.hero-low-text {
+	margin: 10px 0 0 0;
+}
+.hero-links {
+	margin: 126px 0 0 0;
+}
+.hero-links-menu {
+	display: flex;
+	column-gap: 31px;
+}
+.hero-links-item {
+	background: var(--bg-color);
+	padding: 10px 12px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.hero-links-item:hover {
+	transform: scale(1.1);
+	transition: all 0.4s;
 }
