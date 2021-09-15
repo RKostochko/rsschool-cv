@@ -44,6 +44,7 @@
 	background: var(--slider-color);
 	border-bottom: 1px solid #aaaaaa;
 	color: #7c7c7c;
+	cursor: pointer;
 }
 .slider-btn-active {
 	color: #fff;
