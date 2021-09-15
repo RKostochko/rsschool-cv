@@ -2,3 +2,38 @@
 @import url(reset.css);
 @import url(header.css);
 @import url(footer.css);
+
+:root {
+	--light-color: #ffffff;
+	--dark-color: #000000;
+	--active-color: #7ddea7;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', 'sans-serif';
+	font-size: 1.6rem;
+	font-weight: 400;
+	background-color: var(--light-color);
+	color: var(--dark-color);
+	position: relative;
+}
+
+h1,h2,h3,h4 {
+	font-weight: 500;
+}
+
+.container {
+	max-width: 114rem;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+	.container {
+		padding: 0 3rem;
+	}
+}
