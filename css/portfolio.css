@@ -36,7 +36,7 @@
 }
 .slider-btn {
 	padding: 15px 80px;
-	font-family: 'Montserrat';
+	font-family: "Montserrat";
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 17px;
@@ -65,23 +65,31 @@
 
 .slider-picture:hover {
 	opacity: 0.6;
-} 
+}
 
 .clock-project {
-	background: url(../img/slide-pic.png);
+	background: url(../img/clock.png) no-repeat;
+	background-size: 640px 400px;
 }
 .slider-project {
-	background: url(../img/slide-pic.png);
+	background: url(../img/slider.png);
+	background-size: 640px 400px;
 }
 .filter-project {
-	background: url(../img/slide-pic.png);
+	background: url(../img/filter.png);
+	background-size: 640px 400px;
+}
+.filter-project a,
+.slider-project a,
+.clock-project a {
+	text-shadow: 3px 5px 6px var(--black-color);
 }
 
 .education-bntu {
-	background: url(../img/slide-pic.png);
+	background: url(../img/bntu.png);
 }
 .education-rs {
-	background: url(../img/slide-pic.png);
+	background: url(../img/rsschool.png);
 }
 .education-clear {
 	background: var(--slider-color);
@@ -91,11 +99,14 @@
 .education-info {
 	width: 640px;
 	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .project-info:hover,
 .education-info:hover {
 	transition: all 0.4s ease-out;
-	background: rgba(0,0,0,0.5);
+	background: rgba(0, 0, 0, 0.5);
 }
 
 .clear {
@@ -112,9 +123,16 @@
 	justify-content: center;
 	align-items: center;
 	color: var(--white-color);
-	font-family: Montserrat;
+	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 20px;
+	line-height: 24px;
+}
+.slider-link {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 34px;
 	line-height: 24px;
 }
