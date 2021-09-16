@@ -25,10 +25,21 @@ new TypeIt('#type1', {
 	loop: true,
 	waitUntilVisible: true,
 })
-.type('Front-End', { delay: 400 })
+.type('Developer', { delay: 400 })
 .pause(500)
 .delete(9)
-.type('Developer', {delay: 400})
+.type('Front-End', {delay: 400})
 .pause(500)
 .delete(9)
 .go();
+
+// GSAP
+gsap.from('.logo', {opacity: 0, duration: 1, delay: .5, y: -10})
+gsap.from('.hamburger', {opacity: 0, duration: 1, delay: 1, x: 20})
+gsap.from('.banner', {opacity: 0, duration: 1, delay: 1.5, x: -200})
+gsap.from('.hero h3', {opacity: 0, duration: 1, delay: 2, y: -50})
+gsap.from('.hero h2', {opacity: 0, duration: 1, delay: 2.5, y: -45})
+gsap.from('.hero h4', {opacity: 0, duration: 1, delay: 3, y: -30})
+gsap.from('.hero a', {opacity: 0, duration: 1, delay: 3.5, y: 50})
+gsap.from('.nav-item', {opacity: 0, duration: 1, delay: 1.2, y: 30, stagger: .2,})
+gsap.from('.icons a', {opacity: 0, duration: 1, delay: 4, x: -30, stagger: .2,})
