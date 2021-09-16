@@ -67,3 +67,27 @@ gsap.from('.hero h4', {opacity: 0, duration: 1, delay: 3, y: -30})
 gsap.from('.hero a', {opacity: 0, duration: 1, delay: 3.5, y: 50})
 gsap.from('.nav-item', {opacity: 0, duration: 1, delay: 1.2, y: 30, stagger: .2,})
 gsap.from('.icons a', {opacity: 0, duration: 1, delay: 4, x: -30, stagger: .2,})
+
+// Glidejs
+
+const glide = document.querySelector('.glide');
+if(glide)
+new Glide (glide, {
+type: 'carousel',
+startAt: 0,
+perView: 3,
+gap: 30,
+hoverpause: true,
+// autoplay: 2000,
+animationDuration: 800,
+animationTimingFunc: 'ease-in-out',
+breakpoints: {
+	996: {
+		perView: 2,
+	},
+	768: {
+		perView: 1,
+	},
+	
+}
+}).mount()
