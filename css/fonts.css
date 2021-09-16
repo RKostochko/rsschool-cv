@@ -1,10 +1,1 @@
-@font-face {
-	font-family: "Gilroy Light";
-	src: url(/rsschool-cv/fonts/Gilroy-Light.otf);
-	font-weight: 300;
-}
-@font-face {
-	font-family: "Gilroy ExtraBold";
-	src: url(/rsschool-cv/fonts/Gilroy-ExtraBold.otf);
-	font-weight: 800;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
