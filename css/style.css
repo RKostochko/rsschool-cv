@@ -147,3 +147,50 @@ a.btn:active{
 		max-width: 90%;
 	}
 }
+
+/* Services */
+
+.theme {
+	background-color: var(--dark-color);
+}
+.theme .title {
+	color: var(--light-color);
+}
+
+.services-center{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: 3rem;
+}
+.service {
+	color: var(--light-color);
+	background-color: #111;
+	border-radius: 1rem;
+	transition: all 300ms ease-in-out;
+	padding: 2rem;
+	text-align: center;
+}
+
+.service span {
+	color: var(--active-color);
+	font-size: 4rem;
+	transition: all 300ms ease-in-out;
+}
+
+.service h2 {
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+}
+
+.service p {
+	font-size: 1.4rem;
+	color: var(--light-color);
+}
+
+.service:hover{
+	background-color: var(--active-color);
+}
+.service:hover span {
+	color: var(--light-color);
+}
+
