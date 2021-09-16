@@ -113,3 +113,5 @@ breakpoints: {
 	
 }
 }).mount()
+
+AOS.init();
